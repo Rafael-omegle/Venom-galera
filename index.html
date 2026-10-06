@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Venom</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Akronim&family=Edu+QLD+Hand:wght@400..700&family=Honk:MORF@15&family=Pixelify+Sans:wght@400..700&family=Playwrite+BE+WAL+Guides&family=Sixtyfour&display=swap"
+        rel="stylesheet">
+
+    <style>
+
+        /* CONFIGURAÇÕES GERAIS */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(255, 255, 255);
+            text-align: center;
+
+            background:
+                linear-gradient(
+                    150deg,
+                    #555555 0%,
+                    #212072 35%,
+                    #080808 90%
+                );
+
+            background-attachment: fixed;
+        }
+
+
+        /* CABEÇALHO */
+
+        .topo {
+            background: #000;
+            padding: 40px 20px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+        }
+
+        .gif-principal {
+            width: 30%;
+            max-width: 600px;
+            border-radius: 15px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: "", cursive;
+        }
+
+        .titulo-principal {
+            margin-top: 25px;
+            font-size: clamp(2rem, 5vw, 4rem);
+            text-shadow: 0 0 15px #171857;
+        }
+
+        .subtitulo {
+            font-size: clamp(1.3rem, 3vw, 2rem);
+        }
+
+
+        /* TÍTULO DA PÁGINA */
+
+        .titulo-venom {
+            margin: 50px 0 25px;
+            font-size: clamp(2.5rem, 6vw, 5rem);
+
+            text-shadow:
+                0 0 10px rgb(0, 0, 0),
+                0 0 20px #000000;
+        }
+
+        .gif-venom {
+            width: 40%;
+            max-width: 500px;
+            border-radius: 15px;
+            margin-bottom: 50px;
+        }
+
+
+        /* CARDS */
+
+        .card-venom {
+            height: 100%;
+            padding: 25px;
+
+            background: rgba(0, 0, 0, 0.65);
+
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+
+            transition: transform 0.3s ease;
+        }
+
+        .card-venom:hover {
+            transform: translateY(-8px);
+        }
+
+        .card-venom h3 {
+            color: white;
+            margin-bottom: 20px;
+
+            text-shadow: 0 0 10px #10103f;
+        }
+
+        .card-venom p {
+            color: #eeeeee;
+            line-height: 1.7;
+            text-align: left;
+        }
+
+
+        /* GIF FINAL */
+
+        .gif-final {
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 15px;
+        }
+
+
+        /* RODAPÉ */
+
+        footer {
+            margin-top: 60px;
+            padding: 25px;
+
+            background: #000;
+            color: #aaa;
+        }
+
+
+        /* CELULAR */
+
+        @media (max-width: 768px) {
+
+            .gif-principal {
+                width: 80%;
+            }
+
+            .gif-venom {
+                width: 70%;
+            }
+
+            .card-venom {
+                margin-bottom: 20px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <!-- CABEÇALHO -->
+
+    <header class="topo">
+
+        <img src="img/VM.gif"
+            class="img-fluid gif-principal"
+            alt="Venom">
+
+        <h1 class="titulo-principal">
+            We can do whatever we want
+        </h1>
+
+        <h2 class="subtitulo">
+            We are Venom
+        </h2>
+
+    </header>
+
+
+    <!-- TÍTULO -->
+
+    <main>
+
+        <h1 class="titulo-venom">
+            Venom
+        </h1>
+
+        <img src="img/venom_02.gif"
+            class="img-fluid gif-venom"
+            alt="Venom">
+
+
+        <!-- INFORMAÇÕES -->
+
+        <div class="container">
+
+            <div class="row g-4">
+
+
+                <!-- CARD 1 -->
+
+                <div class="col-md-4">
+
+                    <section class="card-venom">
+
+                        <h3>
+                            1 - O que ele é?
+                        </h3>
+
+                        <p>
+                            É um simbionte alienígena que precisa se unir
+                            a um hospedeiro para sobreviver.
+                        </p>
+
+                        <p>
+                            O hospedeiro mais famoso é Eddie Brock,
+                            e os dois juntos formam o Venom.
+                        </p>
+
+                        <p>
+                            <strong>Habilidades:</strong>
+                        </p>
+
+                        <p>
+                            Superforça e resistência
+                            Criar e lançar teias
+                            Escalar paredes
+                            Criar garras e tentáculos
+                            Regenerar ferimentos
+                            Compartilhar pensamentos e memórias
+                        </p>
+
+                        <p>
+                            Uma característica marcante é que Venom
+                            costuma falar usando "nós", porque Eddie
+                            e o simbionte formam uma espécie de dupla.
+                        </p>
+
+                        <p>
+                            <strong>
+                                Eddie Brock + simbionte = Venom.
+                            </strong>
+                        </p>
+
+                    </section>
+
+                </div>
+
+
+                <!-- CARD 2 -->
+
+                <div class="col-md-4">
+
+                    <section class="card-venom">
+
+                        <h3>
+                            2 - Qual espécie?
+                        </h3>
+
+                        <p>
+                            <strong>Espécie:</strong> Klyntar
+                        </p>
+
+                        <p>
+                            <strong>Nome:</strong> Venom
+                        </p>
+
+                        <p>
+                            <strong>Origem:</strong> planeta Klyntar
+                        </p>
+
+                        <p>
+                            <strong>Hospedeiro:</strong> Eddie Brock
+                        </p>
+
+                        <p>
+                            <strong>Características:</strong>
+                        </p>
+
+                        <p>
+                            Corpo preto e extremamente musculoso.
+                            Geralmente maior e mais largo que Eddie Brock.
+                            Dentes grandes, numerosos e afiados.
+                            Língua muito longa.
+                            Olhos grandes, brancos e sem pupilas visíveis.
+                            Símbolo de aranha branca no peito e nas costas.
+                            Garras afiadas.
+                            Pode criar tentáculos, lâminas e outras extensões.
+                        </p>
+
+                        <p>
+                            Sua anatomia não é humana,
+                            pois ele é um simbionte alienígena.
+                        </p>
+
+                    </section>
+
+                </div>
+
+
+                <!-- CARD 3 -->
+
+                <div class="col-md-4">
+
+                    <section class="card-venom">
+
+                        <h3>
+                            Curiosidades!!!
+                        </h3>
+
+                        <p>
+                            <strong>
+                                The Amazing Spider-Man #300 (1988)
+                            </strong>
+                            <br>
+                            Uma das histórias mais importantes do
+                            personagem e apresenta Venom completo.
+                        </p>
+
+                        <p>
+                            <strong>
+                                Venom: Lethal Protector (1993)
+                            </strong>
+                            <br>
+                            Uma das primeiras grandes histórias solo
+                            do Venom.
+                        </p>
+
+                        <p>
+                            <strong>
+                                Venom (2011)
+                            </strong>
+                            <br>
+                            Mostra diferentes fases do personagem
+                            e novos hospedeiros.
+                        </p>
+
+                        <p>
+                            <strong>
+                                Venom (2018)
+                            </strong>
+                            <br>
+                            Fase importante escrita por Donny Cates,
+                            expandindo a história dos simbiontes.
+                        </p>
+
+                        <p>
+                            <strong>
+                                Absolute Carnage (2019)
+                            </strong>
+                            <br>
+                            Venom enfrenta Carnificina.
+                        </p>
+
+                        <p>
+                            <strong>
+                                King in Black (2020–2021)
+                            </strong>
+                            <br>
+                            Uma das maiores histórias envolvendo
+                            os simbiontes e Knull.
+                        </p>
+
+                        <img src="img/200.gif"
+                            class="img-fluid gif-final"
+                            alt="Venom">
+
+                    </section>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <p>
+            Página sobre Venom 🕷️
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
